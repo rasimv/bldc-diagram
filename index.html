@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>
+                <canvas id="magicCanvas" width="800" height="800"
+                        style="border:1px solid #c3c3c3;">
+                    Your browser does not support the canvas element.
+                </canvas>
+            </th>
+            <th>
+                <input type="range" class="slider" min="0" max="720" value="360" id="magicRange" oninput="draw(800, this.value)">
+<!--                <button class="button button2" onclick="function sss(){draw(800, 380)();}">Blue</button>-->
+            </th>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+    <script>
+        draw(800, 360);
+    </script>
+
+    <style>
+        .slider
+        {
+            -webkit-appearance: slider-vertical;
+            height: 800px;
+        }
+    </style>
+</body>
+</html>
